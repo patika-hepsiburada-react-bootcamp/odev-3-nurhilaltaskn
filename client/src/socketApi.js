@@ -3,7 +3,7 @@ import { io } from 'socket.io-client';
 let socket;
 export const connectSocket = () => {
   console.log('Connectting');
-  socket = io("http://localhost:3000", { transports: ['websocket'] });
+  socket = io(process.env.REACT_APP_BACKEND_ENDPOINT, { transports: ['websocket'] });
 
   socket.on('connect', () => {
     console.log('connected');
