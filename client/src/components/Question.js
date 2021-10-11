@@ -3,7 +3,7 @@ import React from 'react';
 function Question() {
   return (
     <div>
-      <h2 style={{color:"#ff6a6a"}}> Choose your favorite game:</h2>
+      <h3 style={{color:"#000"}}> Choose your favorite game:</h3>
     </div>
   );
 }

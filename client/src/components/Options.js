@@ -25,19 +25,24 @@ function Options() {
   return (
     <div id="options" >
      
-
+<table><tr><td>
       <label htmlFor="">
-        <input
+ 
+       <input
           name="option"
           type="radio"
           value="Minecraft"
           onChange={handleSelect}
           checked={selectedOption === 'Minecraft'}
         />
-        Minecraft ({getPercent('Minecraft')} %)
-      </label>
-      <progress id="file" value={options['Minecraft']} max={total} />
+       {" "}Minecraft ({getPercent('Minecraft')} %)
+       <br/>
+<progress id="file" value={options['Minecraft']} max={total} /><br/> 
+<img style={{width:"150px"}} src="/gamelogo/Minecraft.jpg"/><br/> <br/> <br/> 
 
+      </label>     </td>
+     
+      <td>
       <label htmlFor="">
         <input
           name="option"
@@ -46,10 +51,12 @@ function Options() {
           onChange={handleSelect}
           checked={selectedOption === 'GTA5'}
         />
-        GTA5 ({getPercent('GTA5')} %)
-      </label>
-      <progress id="file" value={options['GTA5']} max={total} />
-
+      {" "}  GTA5 ({getPercent('GTA5')} %)
+      <progress id="file" value={options['GTA5']} max={total} /><br/> 
+      <img style={{width:"150px"}} src="/gamelogo/GTA5.jpg"/><br/> <br/> <br/> 
+      </label> </td>
+     
+      <td>
       <label htmlFor="">
         <input
           name="option"
@@ -58,10 +65,12 @@ function Options() {
           onChange={handleSelect}
           checked={selectedOption === 'CSGO'}
         />
-        CSGO ({getPercent('CSGO')} %)
-      </label>
-      <progress id="file" value={options['CSGO']} max={total} />
+       {" "} CSGO ({getPercent('CSGO')} %)
+       <progress id="file" value={options['CSGO']} max={total} /><br/> 
+      <img style={{width:"150px"}} src="/gamelogo/CSGO.jpg"/><br/> <br/> <br/> 
 
+      </label></td>
+      <td>
       <label htmlFor="">
         <input
           name="option"
@@ -70,17 +79,21 @@ function Options() {
           onChange={handleSelect}
           checked={selectedOption === 'LoL'}
         />
-        LoL ({getPercent('LoL')} %)
-      </label>
-      <progress id="file" value={options['LoL']} max={total} />
-
+      {" "}  LoL ({getPercent('LoL')} %)
+      <progress id="file" value={options['LoL']} max={total} /><br/> 
+      <img style={{width:"150px"}} src="/gamelogo/LoL.jpg"/><br/> 
+      </label> 
+     
       <br />
-    
+      <br />
+      </td></tr></table>
       <div>
         <button onClick={handleSubmit}>VOTE!</button>
       </div>
-      <br /><br />
-      <h3>TOTAL VOTE: {total}</h3>
+      <br />
+      <h4>TOTAL VOTE: {total}</h4>
+
+      
     </div>
   );
 }

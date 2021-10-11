@@ -17,7 +17,7 @@ function Container() {
   }, [setOptions]);
 
   return (
-    <div style={{border:"3px dashed #ff6a6a", width:"400px", padding:"10px"}}>
+    <div style={{fontFamily:"Roboto", border:"3px solid #565656", backgroundColor:"#dddddd", width:"660px", padding:"10px 0px 10px 30px"}}>
       <Question />
       <Options />
     </div>
