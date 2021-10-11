@@ -10,10 +10,10 @@ app.get('/', (req, res) => {
 });
 
 const votes = {
-  javascript: 0,
-  go: 0,
-  php: 0,
-  c: 0,
+  Minecraft: 0,
+  GTA5: 0,
+  CSGO: 0,
+  LoL: 0,
 };
 
 io.on('connection', (socket) => {
@@ -30,6 +30,6 @@ io.on('connection', (socket) => {
   socket.on('disconnect', () => console.log('a user disconnected'));
 });
 
-server.listen(3000, () => {
-  console.log('listening on *:3000');
+server.listen(3001, () => {
+  console.log('listening on *:3001');
 });

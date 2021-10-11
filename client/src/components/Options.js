@@ -23,64 +23,64 @@ function Options() {
   };
 
   return (
-    <div id="options">
-      <pre>{JSON.stringify(options, null, 2)}</pre>
-
-      <h1>Total: {total}</h1>
+    <div id="options" >
+     
 
       <label htmlFor="">
         <input
           name="option"
           type="radio"
-          value="javascript"
+          value="Minecraft"
           onChange={handleSelect}
-          checked={selectedOption === 'javascript'}
+          checked={selectedOption === 'Minecraft'}
         />
-        JavaScript ({getPercent('javascript')} %)
+        Minecraft ({getPercent('Minecraft')} %)
       </label>
-      <progress id="file" value={options['javascript']} max={total} />
+      <progress id="file" value={options['Minecraft']} max={total} />
 
       <label htmlFor="">
         <input
           name="option"
           type="radio"
-          value="go"
+          value="GTA5"
           onChange={handleSelect}
-          checked={selectedOption === 'go'}
+          checked={selectedOption === 'GTA5'}
         />
-        GO ({getPercent('go')} %)
+        GTA5 ({getPercent('GTA5')} %)
       </label>
-      <progress id="file" value={options['go']} max={total} />
+      <progress id="file" value={options['GTA5']} max={total} />
 
       <label htmlFor="">
         <input
           name="option"
           type="radio"
-          value="php"
+          value="CSGO"
           onChange={handleSelect}
-          checked={selectedOption === 'php'}
+          checked={selectedOption === 'CSGO'}
         />
-        PHP ({getPercent('php')} %)
+        CSGO ({getPercent('CSGO')} %)
       </label>
-      <progress id="file" value={options['php']} max={total} />
+      <progress id="file" value={options['CSGO']} max={total} />
 
       <label htmlFor="">
         <input
           name="option"
           type="radio"
-          value="c"
+          value="LoL"
           onChange={handleSelect}
-          checked={selectedOption === 'c'}
+          checked={selectedOption === 'LoL'}
         />
-        C ({getPercent('c')} %)
+        LoL ({getPercent('LoL')} %)
       </label>
-      <progress id="file" value={options['c']} max={total} />
+      <progress id="file" value={options['LoL']} max={total} />
 
       <br />
-      <br />
+    
       <div>
-        <button onClick={handleSubmit}>Vote</button>
+        <button onClick={handleSubmit}>VOTE!</button>
       </div>
+      <br /><br />
+      <h3>TOTAL VOTE: {total}</h3>
     </div>
   );
 }
